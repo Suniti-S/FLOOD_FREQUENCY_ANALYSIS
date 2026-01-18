@@ -8,14 +8,21 @@ The method is based on the **lmomco** package by W.H. Asquith, which uses L-mome
 
 ## Features
 
-### ✔ Data Input & Visualization
+### Data Input & Visualization
 - Reads flood data from a text file (Year + Annual Maximum Discharge)
 - Produces a bar plot of annual maximum flood values
 - Displays basic data structure using R data frames
 
 ---
 
-### ✔ L-Moment Computation
+### L-Moment Computation
 - Computes sample L-moments using:
   ```R
   lmom <- lmoms(data$Qmaks)
+  
+# OUTPUTS:
+
+- Return-period flood values printed to console
+- Bar plot of annual maximum discharges
+- GT-formatted table of multi-distribution results
+- Optional histogram + normal fit curve
