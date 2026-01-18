@@ -16,15 +16,15 @@ This script performs flood frequency analysis using annual maximum discharge dat
 
 # FEATURES:
 
-# Data Input & Visualization
+1. Data Input & Visualization
    - Reads .txt data with Year + Annual Maximum Discharge
    - Plots bar chart of max floods
 
-# L-Moment Computation
+2. L-Moment Computation
    L-moments are calculated using:
        lmom <- lmoms(data$Qmaks)
 
-# Flood-Frequency Estimation
+3. Flood-Frequency Estimation
    Computes T-year floods using:
        - GEV
        - GNO
@@ -32,14 +32,14 @@ This script performs flood frequency analysis using annual maximum discharge dat
        - LN3
        - GUM
 
-# Distribution Comparison Table
+4.  Distribution Comparison Table
    Generates an extended table for multiple return periods:
        2.3, 5, 10, 15, 20, 50, 100, 200, 500, 1000
 
-#   Converts results into wide format and formats using gt.
+5.  Converts results into wide format and formats using gt.
 
 
-#  Optional Histogram + Normal Fit
+6.  Optional Histogram + Normal Fit
    - Histogram of flood data
    - Overlaid normal distribution curve
 
